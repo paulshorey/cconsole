@@ -2,7 +2,22 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Default",
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "docs", "test"],
+  "exclude": [
+    "docs",
+    "node_modules",
+    "dist",
+    "umd",
+    "esm",
+    "out",
+    "test",
+    ".next",
+    ".backup",
+    "public",
+    "storybook-static",
+    "**/*.test.ts",
+    "**/*.test.js",
+    "**/*.stories.tsx"
+  ],
   "compilerOptions": {
     "lib": ["DOM"],
     "moduleResolution": "Node",
